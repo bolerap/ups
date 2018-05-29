@@ -9,7 +9,7 @@ Run steps
     - data: JSON (username, password, answers fields is required), following is example of POST data
 
         `{
-            "firstName": "Joewfsfhn",
+            "firstName": "John",
             "lastName": "smith",
             "email": "js@js.com",
             "username": "admin",
@@ -33,5 +33,5 @@ Run steps
                 "__v": 0
             }
         }`
-    5. Enjoy
-    6. Notes: Tested on Archlinux with nodejs 10.2.1, mongodb 3.6.4
+5. Enjoy
+6. Notes: Tested on Archlinux with nodejs 10.2.1, mongodb 3.6.4
