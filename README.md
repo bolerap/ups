@@ -7,6 +7,7 @@ Run steps
     - endpoint: `http://localhost:8899/user` (if running with another port please replace 8899 by your port)
     - method: POST
     - data: JSON (username, password, answers fields is required), following is example of POST data
+
         `{
             "firstName": "Joewfsfhn",
             "lastName": "smith",
@@ -14,11 +15,11 @@ Run steps
             "username": "admin",
             "password": "admin123",
             "answers": [{"type": "saving", "choice": 10000}, {"type": "loaning", "choice": 8000}]
-        
         }`
+
     - response: JSON following is example of response
-        `
-        {
+
+        `{
             "error": null,
             "data": {
                 "_id": "5b0d21514c55b31dba35bd57",
@@ -31,7 +32,6 @@ Run steps
                 "created": "2018-05-29T09:45:53.508Z",
                 "__v": 0
             }
-        }
-        `
+        }`
     5. Enjoy
     6. Notes: Tested on Archlinux with nodejs 10.2.1, mongodb 3.6.4
