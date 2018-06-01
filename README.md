@@ -14,7 +14,7 @@ Run steps
             "email": "js@js.com",
             "username": "admin",
             "password": "admin123",
-            "answers": [{"type": "saving", "choice": 10000}, {"type": "loaning", "choice": 8000}]
+            "answers": [{"question": "saving", "choice": 10000}, {"question": "loaning", "choice": 8000}]
         }`
 
     - response: JSON following is example of response

@@ -5,10 +5,10 @@ module.exports = {
 	getScore: function (ansArr) {
 		let scores = 0;
 		for (ans of ansArr) {
-			const validType = Object.keys(SCORE).indexOf(ans.type);
-			const validChoice = Object.keys(SCORE[ans.type]).indexOf(ans.choice.toString());
-			if (ans.type && ans.choice && validType !== -1 && validChoice !== -1) {
-				scores += SCORE[ans.type][ans.choice];
+			const validType = Object.keys(SCORE).indexOf(ans.question);
+			const validChoice = Object.keys(SCORE[ans.question]).indexOf(ans.choice.toString());
+			if (ans.question && ans.choice && validType !== -1 && validChoice !== -1) {
+				scores += SCORE[ans.question][ans.choice];
 			}
 			else {
 				return false;
